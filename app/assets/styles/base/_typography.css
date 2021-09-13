@@ -1,0 +1,54 @@
+/* The Castle Elizah */
+@font-face {
+  font-family: 'Castle Elizah';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url('assets/fonts/The Castle Elizah.woff');
+}
+
+/* Gilroy */
+@font-face {
+  font-family: 'Gilroy-Bold ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/Gilroy-Bold.woff');
+}
+  
+@font-face {
+  font-family: 'Gilroy-Heavy ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/Gilroy-Heavy.woff');
+}
+  
+@font-face {
+  font-family: 'Gilroy-Light ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/Gilroy-Light.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/Gilroy-Medium.woff');
+}
+  
+@font-face {
+  font-family: 'Gilroy-Regular ☞';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/Gilroy-Regular.woff');
+}
+
+/* Shadows Into Light */
+@font-face {
+  font-family: 'ShadowsIntoLight-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/ShadowsIntoLight-Regular.ttf');
+}
+
+
