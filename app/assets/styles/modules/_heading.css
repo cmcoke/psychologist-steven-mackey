@@ -1,0 +1,14 @@
+.heading{
+  font-family: 'Castle Elizah';
+  font-weight: normal;
+  line-height: 1.3;
+
+
+  &--large{
+    font-size: clamp(3em, 1rem + 9vw, 12rem);
+    text-align: center;
+    line-height: 1;
+  }
+
+
+}

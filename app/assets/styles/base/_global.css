@@ -2,6 +2,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html{
@@ -30,6 +32,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* this allows images to fit thier respected grid cells. */
+.image-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 a {
   text-decoration: none;
