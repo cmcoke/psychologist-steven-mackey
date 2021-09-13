@@ -1,0 +1,97 @@
+.about{
+  
+  &__headings,
+  & .text-content{
+    grid-column: 2/5;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/10;
+    }
+
+  }
+
+
+  /* heding text contens -- "About Me" & "Dr. Steven Mackey" */
+  &__headings{
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 2/6;
+      grid-row: 1/2;
+    }
+  
+  }
+
+
+  /* a short bio of the doctor */
+  & .text-content{
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 6/10;
+      grid-row: 1/3;
+    }
+
+  }
+
+
+  /* the doctor's signature */
+  &__signature{
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 1/5;
+      grid-row: 2/3;
+      place-self: center;
+    }
+
+    & img{
+      max-width: 6.875rem; /* 6.875rem = 110px */
+
+      @media (min-width: 62em){ /* 62em = 992px */
+        max-width: 9.375rem; /* 9.375rem = 150px */
+      }
+
+      @media (min-width: 91.625em){ /* 91.625em = 1466px */
+        max-width: 13.125rem; /* 13.125rem = 210px */
+      }
+
+    }
+
+  }
+
+  /* link & text content -- "Know More" */
+  & .link--about{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+
+    @media (min-width: 32.5em){ /* 520px = 32.5em */
+      grid-column: 3/4;
+    }
+
+    @media (min-width: 38.75em){ /* 620px = 38.75em */
+      grid-column: 2/4;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/5;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 3/5;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 6/8;
+      justify-self: start;
+    }
+
+  }
+
+
+}

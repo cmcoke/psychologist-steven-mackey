@@ -2,7 +2,7 @@
   
   /* hero section heading -- "Live your life in your own way." */
   &__title{
-    grid-column: 2/4;
+    grid-column: 2/5;
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
@@ -33,7 +33,7 @@
 
   /* contains the hero section image gallery & text content */
   &__gallery{
-    grid-column: 2/4;
+    grid-column: 2/5;
 
     @media (min-width: 48em){ /* 768px = 48em */
       grid-column: 2/6;
@@ -144,7 +144,7 @@
   &__text-content--2,
   &__text-content--3{
     font-family: 'ShadowsIntoLight-Regular';
-    font-size: responsive(16px, 33px);
+    font-size: responsive(15px, 33px);
     text-align: center;
   }
 

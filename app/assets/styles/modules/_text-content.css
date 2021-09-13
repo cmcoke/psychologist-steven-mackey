@@ -1,0 +1,16 @@
+.text-content{
+  font-family: 'Gilroy-Medium ☞';
+
+  p{
+    font-size: responsive(18px, 33px);
+    line-height: 1.4;
+    color: $color-grey;
+    margin:0 0 1.5rem 0;
+
+    @media screen and (min-width: 62em){ /* 62em = 992px */ 
+      margin:0 0 3rem 0;
+    }
+
+  }
+
+}

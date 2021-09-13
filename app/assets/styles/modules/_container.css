@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns:
     minmax(2vw, 5vw) 
-    repeat(2,1fr)
+    repeat(3,1fr)
     minmax(2vw, 5vw);
-  
+
   @media (min-width: 48em){ /* 768px = 48em */
     grid-template-columns:
       minmax(2vw, 5vw) 
@@ -17,6 +17,15 @@
       minmax(4vw, 10vw) 
       repeat(8, minmax(7rem, 50ch))
       minmax(4vw, 10vw);
+  }
+
+
+  &--about{
+        
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-gap: 0 1.5625rem; /* 1.5625rem = 25px */
+    }
+
   }
 
 

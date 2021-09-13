@@ -35,7 +35,7 @@
 
   /* content on the right side of the header section */
   &__right-content{
-    grid-column: 3/4;
+    grid-column: 4/5;
     align-self: center;
     justify-self: end;
     position: relative;
