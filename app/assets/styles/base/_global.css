@@ -8,6 +8,10 @@ html{
   font-size: 100%;
 }
 
+body{
+  background-color: $background-color;
+}
+
 /* makes footer stay at the bottom of the page regardless of the content on the page -- start */
 html, body {
   width: 100%;

@@ -1,0 +1,32 @@
+.main-nav{
+
+  /* the ul tag which contains each of the site' main navigation links. */
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* the li tags for each of the site' main navigation links. */
+  &__item{
+
+    &:not(:last-child){
+      margin-right: 50px;
+    }
+
+  }
+
+  /* the anchor tags for each of the site' main navigation links. */
+  &__link{
+    font-family: 'Gilroy-Regular ☞';
+    font-size: 20px;
+    color: #000;
+    transition: all ease-in-out .3s;
+
+    &:hover{
+      color: $color-orange;
+    }
+
+  }
+
+}
