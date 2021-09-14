@@ -1,0 +1,112 @@
+.video{
+  background-color: #101010;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1rem 1fr;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 48em){ /* 48em = 768px */
+    grid-template-rows: 1fr 2.5rem 1fr;
+  }
+
+  @media (min-width: 91.625em){ /* 91.625em = 1466px */
+    grid-template-rows: 1fr 7rem 1fr;
+  }
+
+
+  /* THE BELOW CODE IS FOR THE SECOND HEADING TEXT CONTENT -- ""Watch video" */
+
+  /* heading text content -- "Watch video" */
+  &__top-heading{
+    position: absolute;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    left: 100%;
+    width: 100%;
+    white-space: nowrap;
+    font-size: responsive(21px, 90px);
+    animation: right-to-left 30s linear infinite;
+  }
+
+  /* this delays the second heading text content -- "Watch video" so that it 
+    does not overlap the first instance of the heading text content -- "Watch video".
+  */
+  &__top-heading-two{
+    animation-delay: 15s;
+  }
+
+
+  /* animates the heading text content -- "Watch video" from right to left horizontally. */
+  @keyframes right-to-left {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%
+    }
+  }
+
+
+  /* makes the image of the play button vertically & horizontally with the heading text content -- "Watch video" */
+  &__play-button{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    z-index: 2;
+
+    & img{
+      max-width: 70px;
+
+      @media (min-width: 62em){ /* 62em = 992px */
+        max-width: none;
+      }
+
+    }
+
+  }
+
+
+
+  /* THE BELOW CODE IS FOR THE SECOND HEADING TEXT CONTENT -- "Take an inside tour" */
+
+  /* heading text content -- "Take an inside tour" */
+  &__bottom-heading{
+    position: absolute;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    left: 100%;
+    width: 100%;
+    white-space: nowrap;
+    font-size: responsive(21px, 90px);
+    animation: left-to-right 30s linear infinite;
+  }
+
+  /* this delays the second heading text content -- "Take an inside tour" so that it 
+    does not overlap the first instance of the heading text content -- "Take an inside tour".
+  */
+  &__bottom-heading-two{
+    animation-delay: 15s;
+  }
+
+
+  /* animates the heading text content -- "Take an inside tour" from right to left horizontally. */
+  @keyframes left-to-right {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%
+    }
+  }
+
+
+}
+
