@@ -20,7 +20,6 @@
   &--medium{
     font-size: responsive(35px, 88px);
     margin: 10px 0 25px;
-    
   }
 
 
@@ -50,6 +49,16 @@
     }
 
   }
+
+
+  &--grey{
+    color: $color-grey;
+  }
+
+  &--white{
+    color: #fff;
+  }
+  
 
 
 }

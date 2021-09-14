@@ -1,0 +1,249 @@
+.services{
+  position: relative;
+  background-color: #101010;
+  overflow: hidden;
+
+  /* heading text content -- "Service" */
+  & .heading--grey{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    
+    transform: translateY(-94%) translateX(-1%);
+    font-size: 38vw;
+    opacity: 0.1;
+    z-index: 1;
+
+    @media (min-width:32.25em){ /* 32.25em = 516px */
+      transform: translateY(-105%) translateX(-1%);
+    }
+
+    @media (min-width: 48em){ /* 48em = 768px */
+      transform: translateY(-100%) translateX(-1%);
+    }
+
+    @media (min-width: 106.25em){ /* 106.25em = 1700px */
+      transform: translateY(-102%) translateX(-1%);
+    }
+
+  }
+
+
+  & .container{
+    margin: 5rem 0;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      margin: 8rem 0;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      margin: 11rem 0;
+    }
+
+    @media (min-width: 84.5em){ /* 1352px = 84.5em */
+      margin: 14rem 0;
+    }
+
+    @media (min-width: 125em){ /* 2000px = 125em */
+      margin: 18rem 0;
+    }
+
+  }
+
+  & .heading--small,
+  & .heading--medium,
+  &__family-psychology,
+  &__consultations,
+  &__depression,
+  &__social-anxiety{
+    grid-column: 2/4;
+  }
+
+  & .heading--small,
+  & .heading--medium{
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/5;
+    }
+
+  }
+
+  /* heading text content -- "Service that matters"  */
+  & .heading--small{
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/5;
+      grid-row: 1/2;
+    }
+
+  }
+
+  /* heading text content -- "Your passion is my satisfaction"  */
+  & .heading--medium{
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 5/10;
+      grid-row: 1/2;
+      margin: 0;
+      line-height: 1;
+    }
+
+  }
+
+
+  /* refers tp the different service types */
+  &__type{
+    margin: 0 22px 0 0;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      margin: 0 33px 0 0;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      margin: 0 0 0 0;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      margin: 0 20px 0 0px;
+      padding-right: 35px;
+    }
+
+    @media (min-width: 125em){ /* 125em = 2000px */
+      margin: 0 55px 0 0px;
+      padding-right: 40px;
+    }
+
+    /* service logo */
+    & img{
+      margin: 15px 0 20px;
+
+      @media (min-width: 62em){ /* 62em = 992px */
+        margin-top: 77px;
+      }
+
+      @media (min-width: 106.25em){ /* 106.25em = 1700px */
+        margin-top: 120px;
+      }
+
+    }
+
+    /* service description */
+    & .text-content--grey{
+      margin-bottom: 40px;
+
+      @media (min-width: 62em){ /* 62em = 992px */
+        margin-bottom: 0px;
+      }
+
+    }
+
+  }
+
+
+  /* name of service */
+  &__name{
+    color: #fff;
+    font-family: 'Gilroy-Medium ☞';
+    font-size: responsive(21px, 30px);
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+
+  /* Family Psychology */
+  &__family-psychology{
+
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/4;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+     grid-column: 2/5;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 2/4;
+    }
+
+  }
+
+
+  /* Consultations */
+  &__consultations{
+
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 4/6;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+     grid-column: 6/9;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 4/6;
+    }
+
+  } 
+
+
+  /* Depression */
+  &__depression{
+
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/4;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 2/5;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 6/8;
+      grid-row: 3/4;
+    }
+
+  }
+
+
+  /* Social Anxiety */
+  &__social-anxiety{
+
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 3/4;
+      grid-row: 4/5;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 4/6;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 6/9;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 8/10;
+      grid-row: 3/4;
+    }
+
+  }
+
+
+
+
+}

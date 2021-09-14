@@ -13,4 +13,12 @@
 
   }
 
+
+  &--grey{
+    color: #a5a5a5;
+    font-size: responsive(17px, 23px);
+    line-height: 1.5;
+  }
+
+
 }
