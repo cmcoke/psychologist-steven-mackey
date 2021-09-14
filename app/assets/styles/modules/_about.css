@@ -1,5 +1,16 @@
 .about{
-  
+  margin: 2rem 0;
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    margin: 5rem 0;
+  }
+
+  /* ensures that the section fits within the site' main container for a uniform look */
+  & .container--about{
+    grid-column: 1/-1;
+  }
+
+
   &__headings,
   & .text-content{
     grid-column: 2/5;
@@ -63,6 +74,7 @@
 
   }
 
+  
   /* link & text content -- "Know More" */
   & .link--about{
     grid-column: 3/5;

@@ -2,7 +2,7 @@
   
   /* hero section heading -- "Live your life in your own way." */
   &__title{
-    grid-column: 2/5;
+    grid-column: 2/4;
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
@@ -33,10 +33,10 @@
 
   /* contains the hero section image gallery & text content */
   &__gallery{
-    grid-column: 2/5;
+    grid-column: 1/-1;
 
     @media (min-width: 48em){ /* 768px = 48em */
-      grid-column: 2/6;
+      /* grid-column: 2/6; */
     }
 
     @media (min-width: 62em){ /* 992px = 62em */
@@ -179,8 +179,12 @@
     }
 
     @media screen and (min-width: 33.3125em){ /* 33.3125em  = 533px */ 
-      max-width: 150px; 
       transform: rotate(11deg) translateY(-75%) translateX(18px);
+    }
+
+    @media screen and (min-width: 35.875em){ /* 35.875em  = 574px */ 
+      max-width: 130px; 
+      transform: rotate(11deg) translateY(-90%) translateX(30px);
     }
 
     @media screen and (min-width: 38.6875em){ /* 38.6875em  = 619px */ 
@@ -188,8 +192,18 @@
       transform: rotate(11deg) translateY(-90%) translateX(44px);
     }
 
+    @media screen and (min-width: 40.375em){ /* 40.375em  = 646px */ 
+      max-width: 140px;
+      transform: rotate(11deg) translateY(-90%) translateX(44px);
+    }
+
+    @media screen and (min-width: 45em){ /* 45em  = 720px */ 
+      max-width: 160px;
+      transform: rotate(11deg) translateY(-90%) translateX(44px);
+    }
+
     @media screen and (min-width: 47.6875em){ /* 47.6875em  = 763px */ 
-      max-width: 190px; 
+      max-width: 180px; 
       transform: rotate(11deg) translateY(-99%) translateX(60px);
     }
     
