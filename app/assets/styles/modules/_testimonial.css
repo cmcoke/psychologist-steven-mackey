@@ -1,0 +1,115 @@
+.testimonial{
+  margin: 5rem 0;
+  text-align: center;
+
+  @media (min-width: 48em){ /* 48em = 768px */
+    margin: 9rem 0;
+  }
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    margin: 18rem 0 11rem 0;
+  }
+
+  /* ensures that the section fits within the site' main container for a uniform look */
+  & .main-carousel{
+    grid-column: 2/4;
+    /* place-self: center; */
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+  
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/9;
+    }
+
+  }
+
+
+  /* name of client */
+  &__name{
+    font-family: 'Gilroy-Medium ☞';
+    font-size: responsive(21px, 35px);
+    font-weight: normal;
+    margin-bottom: 15px;
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+  /* client' occupation */
+  &__occupation{
+    font-family: 'Gilroy-Medium ☞';
+    font-size: responsive(15px, 30px);
+    font-weight: normal;
+    color: #3b3a38;
+    margin-bottom: 25px;
+    line-height: 1.2;
+  }
+
+
+  /* left & right navigation arrows */
+  &__left-arrow,
+  &__right-arrow{
+    cursor: pointer;
+    max-width: 40px;
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      max-width: 60px;
+    }
+
+  }
+
+  /* left navigation arrow */
+  &__left-arrow{
+    grid-column: 2/3;
+    justify-self: end;
+    margin-right: 11px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 3/4;
+      margin-right: 24px;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 2/3;
+      grid-row: 1/2;
+      justify-self: start;
+      align-self: center;
+    }
+
+  }
+
+
+  /* right navigation arrow */
+  &__right-arrow{
+    grid-column: 3/4;
+    justify-self: start;
+    margin-left: 11px;
+    
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 4/5;
+      margin-left: 20px;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 9/10;
+      grid-row: 1/2;
+      justify-self: end;
+      align-self: center;
+    }
+
+  }
+
+  /* for flickty carousel cell */
+  & .carousel-cell{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+
+}

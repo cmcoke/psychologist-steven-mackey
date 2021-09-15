@@ -14,4 +14,6 @@
 @import "modules/_features";
 @import "modules/_services";
 @import "modules/_video";
+@import "modules/_testimonial";
+@import "flickity/dist/flickity.min.css";
 

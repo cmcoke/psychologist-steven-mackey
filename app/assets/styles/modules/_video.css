@@ -2,16 +2,16 @@
   background-color: #101010;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1rem 1fr;
+  grid-template-rows: 1fr 1rem 1fr 1fr;
   position: relative;
   overflow: hidden;
 
   @media (min-width: 48em){ /* 48em = 768px */
-    grid-template-rows: 1fr 2.5rem 1fr;
+    grid-template-rows: 1fr 2.5rem 1fr minmax(8rem, 10rem);
   }
 
   @media (min-width: 91.625em){ /* 91.625em = 1466px */
-    grid-template-rows: 1fr 7rem 1fr;
+    grid-template-rows: 1fr 7rem 1fr minmax(10rem, 13rem);
   }
 
 

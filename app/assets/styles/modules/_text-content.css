@@ -20,5 +20,23 @@
     line-height: 1.5;
   }
 
+  /* for the testimonial section */
+  &--testimonial{
+    color: #3b3a38;
+    font-family: 'Castle Elizah';
+    font-weight: normal;
+    font-size: responsive(25px, 80px);
+    line-height: 1.2;
+    margin-bottom: 30px;
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      /* margin-bottom: 40px; */
+    }
+
+    @media (min-width: 106.25em){ /* 106.25em = 1700px */
+      margin-bottom: 50px;
+    }
+
+  }
 
 }
