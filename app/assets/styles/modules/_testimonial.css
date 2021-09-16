@@ -1,5 +1,5 @@
 .testimonial{
-  margin: 5rem 0;
+  margin: 5rem 0 4rem 0;
   text-align: center;
 
   @media (min-width: 48em){ /* 48em = 768px */
@@ -7,13 +7,12 @@
   }
 
   @media (min-width: 62em){ /* 992px = 62em */
-    margin: 18rem 0 11rem 0;
+    margin: 12rem 0 9rem 0;
   }
 
   /* ensures that the section fits within the site' main container for a uniform look */
   & .main-carousel{
     grid-column: 2/4;
-    /* place-self: center; */
 
     @media (min-width: 48em){ /* 768px = 48em */
       grid-column: 2/6;
