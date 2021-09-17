@@ -113,7 +113,7 @@
   /* name of blog article */
   &__article-name{
     font-family: 'Gilroy-Medium ☞';
-    font-size: responsive(24px, 35px);
+    font-size: responsive(24px, 40px);
     margin: 20px 0;
   }
 

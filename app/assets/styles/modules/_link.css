@@ -17,6 +17,7 @@
 
   &__small-arrow{
     max-width: 1.25rem; /* 1.25rem = 20px */
+    
   }
 
 
@@ -52,5 +53,6 @@
     }
 
   }
+
 
 }

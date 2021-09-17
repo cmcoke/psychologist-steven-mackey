@@ -1,0 +1,122 @@
+.appointment{
+  margin: 5rem 0;
+  
+  @media (min-width: 62em){ /* 992px = 62em */
+    margin: 12rem 0;
+  }
+
+  &__line,
+  &__text-content,
+  & .link--appointment{
+    grid-column: 2/4;
+  }
+
+
+  /* top & bottom grey horizontal lines */
+  &__line{
+    border-top: 1px solid #a5a5a5;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+    
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/10;
+    }
+
+  }
+
+
+  /* top horizontal line */
+  &__top-line{
+    margin-bottom: 50px;
+    grid-row: 1/2;
+
+    @media (min-width: 1380px){ /* 992px = 62em */
+      margin-bottom: 120px;
+    }
+  }
+
+
+  /* bottom horizontal line */
+  &__bottom-line{
+    margin-top: 50px;
+    grid-row: 4/5;
+
+    @media (min-width: 1380px){ /* 992px = 62em */
+      margin-top: 120px;
+    }
+
+  }
+
+
+  /* text content -- "Don't hesitate" */
+  &__text-content{
+    font-family: 'Gilroy-Regular ☞';
+    font-size: responsive(18px, 40px);
+  }
+
+
+  /* link text content -- "Book Appoinment" */
+  & .link--appointment{
+    justify-self: start;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/10;
+    }
+
+  }
+
+
+  /* text content -- "Book Appointment" */
+  & .link__text-appointment{
+    font-family: 'Castle Elizah';
+    font-size: 9vw;
+    margin-top: 18px;
+    margin-bottom: 0;
+
+    /* adds the orange arrow to the right of the text content -- "Book Appointment" */
+    &:after{
+      content: "";
+      display: inline-block;
+      background-image: url('./assets/images/arrow--large.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 15px;
+      height: 15px;
+      margin-left: 12px;
+
+      @media (min-width: 48em){ /* 768px = 48em */
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+      }
+
+      @media (min-width: 62em){ /* 992px = 62em */
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+      }
+
+      @media (min-width: 116.125em){ /* 1858px = 116.125em */
+        width: 60px;
+        height: 60px;
+        margin-left: 40px;
+      }
+
+      @media (min-width: 125em){ /* 2000px = 125em */
+        width: 90px;
+        height: 90px;
+        margin-left: 40px;
+      }
+
+    }
+    
+  }
+
+
+}
