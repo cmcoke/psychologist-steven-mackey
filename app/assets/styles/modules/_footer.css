@@ -1,0 +1,202 @@
+.footer{
+  margin: 2rem 0;
+
+  @media (min-width: 48em){ /* 768px = 48em */
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 62em){ /* 992px = 62em */
+    margin: 5rem 0 1rem 0;
+  }
+
+  &__logo,
+  &__address,
+  &__contact,
+  &__help,
+  &__social-media,
+  &__line,
+  &__copyright-and-info{
+    grid-column: 2/4;
+  }
+
+
+  /* footer logo */
+  &__logo{
+    grid-row: 1/2;
+  }
+
+
+  /* address */
+  &__address{
+    grid-row: 2/3;
+    font-family: 'Gilroy-Medium ☞';
+    font-size: responsive(19px, 33px);
+    line-height: 1.3;
+    margin: 20px 0;
+    max-width: 240px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 3/5;
+      grid-row: 1/2;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 3/6;
+      margin: 0;
+      max-width: 350px;
+    }
+
+  }
+
+
+  /* phone number & email address */
+  &__contact{
+    grid-row: 3/4;
+    font-family: 'Gilroy-Medium ☞';
+    font-size: responsive(16px, 20px);
+    margin: 0 0 20px 0;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 3/5;
+      margin-bottom: 60px;
+    }
+
+  }
+
+
+  /* phone number */
+  &__phone-number{
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+
+  /* email */
+  &__email{
+    letter-spacing: 1px;
+  }
+
+
+  /* help & support */
+  &__help{
+    grid-row: 4/5;
+    margin-bottom: 20px;
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 7/9;
+      grid-row: 1/2;
+      align-self: start;
+      margin-bottom: 0;
+    }
+
+  }
+
+
+  /* social media links */
+  &__social-media{
+    grid-row: 5/6;
+    margin-bottom: 20px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 4/5;
+      grid-row: 4/5;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 9/10;
+      grid-row: 1/2;
+      align-self: center;
+      margin-bottom: 0;
+    }
+
+  }
+
+
+  /* footer grey horizontal line */
+  &__line{
+    grid-row: 7/8;
+    border-top: 1px solid #a5a5a5;
+    margin-bottom: 20px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/10;
+    }
+
+  }
+
+  /* copyright & company info */
+  &__copyright-and-info{
+    grid-row: 7/8;
+    font-family: 'Gilroy-Regular ☞';
+    margin-top: 20px;
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/6;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/10;
+      margin-top: 50px;
+    }
+
+  }
+
+
+  /* copyright */
+  &__copyright{
+    margin-bottom: 18px;
+    line-height: 1.2;
+    font-size: 16px;
+  }
+
+
+  /* company info */
+  &__info{
+    grid-row: 7/8;
+    font-size: 16px;
+
+    a {
+
+      &:not(:last-child){
+        margin-right: 60px;
+
+        @media (min-width: 48em){ /* 768px = 48em */
+          margin-right: 25px;
+        }
+
+      }
+
+    }
+
+
+  }
+
+  /* headings -- "Help & Support" & "Social" */
+  &__heading{
+    font-family: 'Gilroy-Regular ☞';
+    font-size: 18px;
+    color:  #8a8a8a;
+    margin-bottom: 10px;
+  }
+
+
+  /* links */
+  &__link{
+    font-family: 'Gilroy-Regular ☞';
+    font-size: 16px;
+    color: #000;
+  }
+
+  /* list of links */
+  &__list{
+    margin-bottom: 10px;
+  }
+
+}
