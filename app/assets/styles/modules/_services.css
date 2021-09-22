@@ -46,7 +46,7 @@
     }
 
     @media (min-width: 125em){ /* 2000px = 125em */
-      margin: 18rem 0;
+      margin: 18rem 0 14rem 0;
     }
 
   }
@@ -56,7 +56,11 @@
   &__family-psychology,
   &__consultations,
   &__depression,
-  &__social-anxiety{
+  &__social-anxiety,
+  &__stress-management,
+  &__support-group,
+  &__couple-therapy,
+  &__individual-coaching{
     grid-column: 2/4;
   }
 
@@ -82,9 +86,10 @@
 
   /* heading text content -- "Your passion is my satisfaction"  */
   & .heading--medium{
+    font-size: responsive(35px, 100px);
 
     @media (min-width: 1268px){ /* 992px = 62em */
-      grid-column: 5/10;
+      grid-column: 5/11;
       grid-row: 1/2;
       margin: 0;
       line-height: 1;
@@ -236,5 +241,101 @@
     }
 
   }
+
+
+
+  /* Stress Management */
+  &__stress-management{
+
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 2/3;
+      grid-row: 5/6;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/4;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 2/5;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 2/4;
+    }
+
+  }
+
+
+  /* Support Group */
+  &__support-group{
+    
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 3/4;
+      grid-row: 5/6;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 4/6;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 6/9;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 4/6;
+    }
+
+  }
+  
+
+  /* Couple Therapy */
+  &__couple-therapy{
+
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 2/3;
+      grid-row: 6/7;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 2/4;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 2/5;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 6/8;
+      grid-row: 5/6;
+    }
+
+  }
+
+    
+  /* Individual Coaching */
+  &__individual-coaching{
+    
+    @media (min-width: 38.625em){ /* 38.625em = 618px */
+      grid-column: 3/4;
+      grid-row: 6/7;
+    }
+
+    @media (min-width: 48em){ /* 768px = 48em */
+      grid-column: 4/6;
+    }
+
+    @media (min-width: 62em){ /* 62em = 992px */
+      grid-column: 6/9;
+    }
+
+    @media (min-width: 91.625em){ /* 91.625em = 1466px */
+      grid-column: 8/10;
+      grid-row: 5/6;
+    }
+
+  }
+  
 
 }

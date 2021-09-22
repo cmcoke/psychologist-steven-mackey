@@ -7,7 +7,7 @@
 
   &__line,
   &__text-content,
-  & .link--appointment{
+  &__link{
     grid-column: 2/4;
   }
 
@@ -60,16 +60,22 @@
   }
 
 
-  /* text content -- "Don't hesitate" */
+  /* text content -- "Are You Interested?" */
   &__text-content{
     font-family: 'Gilroy-Regular ☞';
     font-size: responsive(18px, 35px);
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      grid-column: 2/6;
+    }
   }
 
 
-  /* link text content -- "Book Appoinment" */
-  & .link--appointment{
+  /* link text content -- "Book An Appointment" */
+  &__link{
     justify-self: start;
+    color: #000;
+    margin-top: 10px;
 
     @media (min-width: 48em){ /* 768px = 48em */
       grid-column: 2/6;
@@ -82,14 +88,14 @@
   }
 
 
-  /* text content -- "Book Appointment" */
-  & .link__text-appointment{
+  /* text content -- Book An Appointment" */
+  &__text-span{
     font-family: 'Castle Elizah';
     font-size: 8vw;
     margin-top: 18px;
     margin-bottom: 0;
 
-    /* adds the orange arrow to the right of the text content -- "Book Appointment" */
+    /* adds the orange arrow to the right of the text content -- "Book An Appointment" */
     &:after{
       content: "";
       display: inline-block;

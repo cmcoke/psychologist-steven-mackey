@@ -1,9 +1,18 @@
 .about{
-  margin: 2rem 0;
+  margin: 3rem 0;
+
+  @media (min-width: 48em){ /* 768px = 48em */
+    margin: 3rem 0 1rem 0;
+  }
 
   @media (min-width: 62em){ /* 992px = 62em */
-    margin: 5rem 0;
+    margin: 5rem 0 2rem 0;
   }
+
+  @media (min-width: 91.625em){ /* 91.625em = 1466px */
+    margin: 5rem 0 8rem 0;
+  }
+
 
   /* ensures that the section fits within the site' main container for a uniform look */
   & .container--about{
