@@ -5,10 +5,12 @@ import 'flickity'
 import 'flickity-imagesloaded'
 import 'flickity-fade'
 import Testimonial from './modules/Testimonial'
-import BlogCarousel from './modules/BlogCarousel'
+import SmoothScroll from './modules/SmoothScroll'
 
-let testimonialCarousel = new Testimonial();
-let blogCarousel = new BlogCarousel();
+
+new Testimonial();
+new SmoothScroll();
+
 
 
 
