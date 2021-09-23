@@ -6,10 +6,12 @@ import 'flickity-imagesloaded'
 import 'flickity-fade'
 import Testimonial from './modules/Testimonial'
 import SmoothScroll from './modules/SmoothScroll'
+import Header from './modules/Header'
 
 
 new Testimonial();
 new SmoothScroll();
+new Header();
 
 
 

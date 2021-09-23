@@ -24,8 +24,12 @@
     color: $color-grey;
     transition: all ease-in-out .3s;
 
+    &.is-current-link {
+      color: $color-orange;
+    }
+
     &:hover{
-      color: #000;
+      color: $color-orange;
     }
 
   }

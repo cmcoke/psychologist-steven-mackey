@@ -22,6 +22,7 @@
     @media (min-width: 62em){ /* 992px = 62em */
       grid-column: 3/9;
       max-width: 1236px;
+      margin-top: 60px;
     }
 
     & span{

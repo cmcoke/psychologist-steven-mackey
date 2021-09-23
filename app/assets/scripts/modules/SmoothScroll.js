@@ -16,7 +16,7 @@ class SmoothScroll{
   scroll(e){
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute("href")==="#" ? "header" : e.currentTarget.getAttribute("href");
-    const targetPosition = document.querySelector(targetId).offsetTop - 50;
+    const targetPosition = document.querySelector(targetId).offsetTop - 128;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     const duration = 1000;
