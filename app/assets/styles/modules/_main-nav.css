@@ -1,37 +1,82 @@
 .main-nav{
 
+  @media (max-width: 61.9375em){ /* 991px = 61.9375em */
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+
   /* the ul tag which contains each of the site' main navigation links. */
   &__list{
-    display: flex;
-    align-items: center;
+
+    @media (max-width: 61.9375em){ /* 991px = 61.9375em */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 70vh;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      display: flex;
+      align-items: center;
+    }
+
   }
 
 
   /* the li tags for each of the site' main navigation links. */
   &__item{
 
-    &:not(:last-child){
-      margin-right: 50px;
+    @media (max-width: 61.9375em){ /* 991px = 61.9375em */
+      display: block;
+      height: 25%;
+      height: calc(100%/8);
+      min-height: 50px;
+      backface-visibility: hidden;
     }
+
+
+    @media (min-width: 62em){ /* 992px = 62em */
+      &:not(:last-child){
+        margin-right: 50px;
+      }
+  
+    } 
 
   }
 
   /* the anchor tags for each of the site' main navigation links. */
   &__link{
     font-family: 'Gilroy-Regular ☞';
-    font-size: 16px;
+    font-size: 25px;
     text-transform: uppercase;
     color: $color-grey;
-    transition: all ease-in-out .3s;
+    transition: color 0.2s;
+    display: inline-block;
 
-    &.is-current-link {
-      color: $color-orange;
-    }
 
-    &:hover{
-      color: $color-orange;
+    @media (min-width: 62em){ /* 992px = 62em */
+      font-size: 16px;
+      display: inline;
+
+      &.is-current-link {
+        color: $color-orange;
+      }
+  
+      &:hover{
+        color: $color-orange;
+      }
+
     }
 
   }
+  
 
 }

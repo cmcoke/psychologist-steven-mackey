@@ -7,11 +7,13 @@ import 'flickity-fade'
 import Testimonial from './modules/Testimonial'
 import SmoothScroll from './modules/SmoothScroll'
 import Header from './modules/Header'
+import MobileMenu from './modules/MobileMenu'
 
 
 new Testimonial();
 new SmoothScroll();
 new Header();
+new MobileMenu();
 
 
 
