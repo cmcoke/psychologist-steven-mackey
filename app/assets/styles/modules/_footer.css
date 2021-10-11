@@ -10,7 +10,7 @@
   &__contact,
   &__menu,
   &__company-info,
-  &__social{
+  &__social-media-links{
     grid-column: 2/4;
   }
 
@@ -31,10 +31,10 @@
     grid-row: 2/3;
     font-family: 'Gilroy-Medium ☞';
     font-size: responsive(22px, 29px);
-    /* font-size: 22px; */
     line-height: 1.3;
     margin: 20px 0;
     max-width: 240px;
+
 
     @media (min-width: 62em){ /* 992px = 62em */
       grid-column: 3/5;
@@ -112,7 +112,7 @@
 
 
   /* social media links */
-  &__social{
+  &__social-media-links{
     grid-row: 6/7;
     margin-bottom: 20px;
 
